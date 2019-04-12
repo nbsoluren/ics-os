@@ -3,7 +3,7 @@ NAME=hello
 SRC=$(NAME).c
 EXE=$(NAME).exe
 
-CC=gcc
+CC=gcc-5
 ICSOS_ROOT=../..
 SDK=../../sdk
 CFLAGS=-m32 -w -nostdlib -fno-builtin -static

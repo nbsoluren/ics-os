@@ -522,7 +522,15 @@ int console_execute(const char *str){
    if (u == 0) 
       return;
   
-   command_length = strlen(u);    
+   command_length = strlen(u);
+   if (strcmp(u,"add") == 0){ //-- Adds two integers. Args: <num1> <num2>
+     int a, b;
+     u = strtok(0," ");
+     a = atoi(u);
+     u = strtok(0," ");
+     b = atoi(u);
+     printf("%d + %d = %d\n",a,b,a+b);
+   }else
     
    //check if a pathcut command was executed
    if (u[command_length - 1] == ':'){
